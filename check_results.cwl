@@ -8,20 +8,13 @@ requirements: []
 
 hints:
   - class: DockerRequirement
-    dockerPull: mepsteindr/check_results:0.1
+    dockerPull: mepsteindr/cwl-gene-prioritization-check-results:0.1
   - class: ResourceRequirement
     coresMin: 1
     ramMin: 2000 #the process requires at least 1G of RAM
     outdirMin: 512000
 
 inputs:
-  - id: sums_file
-    label: Sums File
-    doc: Sums File
-    type: File
-    inputBinding:
-      position: 1
-      prefix: -s
   - id: ranked_genes_file
     label: Ranked Genes File
     doc: Ranked Genes File
@@ -52,7 +45,10 @@ inputs:
       prefix: -e
 
 baseCommand: [/home/check_results.py]
-arguments: []
+arguments:
+  - valueFrom: /home/sums
+    position: 1
+    prefix: -s
 
 outputs:
   - id: results_json

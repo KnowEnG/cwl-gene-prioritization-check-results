@@ -1,6 +1,3 @@
-sums_file:
-  class: File
-  location: sums
 ranked_genes_file:
   class: File
   location: ../cwl-gene-prioritization/results/ranked_genes_download.tsv
