@@ -1,4 +1,4 @@
-# mepsteindr/cwl-gene-prioritization-check-results:0.1
+# mepsteindr/knoweng-gene-prioritization-check-results:0.1
 FROM cblatti3/py3_slim:0.1
 MAINTAINER Milt Epstein <mepstein@illinois.edu>
 

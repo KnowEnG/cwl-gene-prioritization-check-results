@@ -8,7 +8,7 @@ requirements: []
 
 hints:
   - class: DockerRequirement
-    dockerPull: mepsteindr/cwl-gene-prioritization-check-results:0.1
+    dockerPull: mepsteindr/knoweng-gene-prioritization-check-results:0.1
   - class: ResourceRequirement
     coresMin: 1
     ramMin: 2000 #the process requires at least 1G of RAM
