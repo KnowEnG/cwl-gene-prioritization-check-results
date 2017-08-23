@@ -1,12 +1,12 @@
 ranked_genes_file:
   class: File
-  location: ../cwl-gene-prioritization/results/ranked_genes_download.tsv
+  location: ./ranked_genes_download.tsv
 top_genes_file:
   class: File
-  location: ../cwl-gene-prioritization/results/top_genes_download.tsv
+  location: ./top_genes_download.tsv
 combo_results_file:
   class: File
-  location: ../cwl-gene-prioritization/results/combo_results.txt
+  location: ./combo_results.txt
 edge_file:
   class: File
-  location: ../cwl-gene-prioritization/results/9606.STRING_experimental.edge
+  location: ./9606.STRING_experimental.edge
